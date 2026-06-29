@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workshop Marcelo Nunes | Shopping do Artesão</title>
+  <meta name="description" content="Workshop Marcelo Nunes — a arte do crochê. Um evento exclusivo de artesanato. Inscreva-se e participe desta experiência criativa e inspiradora." />
+
+  <!-- Fonte (estilo limpo e arredondado, na pegada da EuroRoma) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       BARRA SUPERIOR (utilitária) — verde escuro EuroRoma
+  ========================================================== -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__left"><i class="fa-solid fa-store"></i> Shopping do Artesão</span>
+      <nav class="topbar__right">
+        <a href="#local"><i class="fa-solid fa-location-dot"></i> Local do Evento</a>
+        <a href="#contato"><i class="fa-solid fa-headset"></i> Contato</a>
+        <span class="topbar__lang"><i class="fa-solid fa-globe"></i> PT</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       CABEÇALHO / MENU
+  ========================================================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand">
+        <span class="brand__logo"><img src="imagens/logo-artesao.png" alt="Shopping do Artesão" /></span>
+        <span class="brand__text">
+          <strong>Workshop</strong>
+          <small>Marcelo Nunes</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#sobre" class="nav__link">Sobre o Evento</a></li>
+          <li><a href="#local" class="nav__link">Local do Evento</a></li>
+          <li><a href="#inscricao" class="nav__link">Inscrição</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+        <a href="#inscricao" class="btn btn--small nav__cta">Inscreva-se</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       BANNER PRINCIPAL (HERO) — foto cheia + título grande
+  ========================================================== -->
+  <section class="hero" id="inicio">
+    <!-- TROCAR: 'imagens/banner-workshop.jpg' é a arte da capa principal -->
+    <div class="hero__media">
+      <img class="hero__img" src="imagens/banner-workshop.jpg"
+           alt="Workshop Turnê Marcelo Nunes 2026 — Garanta sua inscrição. Vagas limitadas!" />
+    </div>
+
+    <div class="hero-cta">
+      <p class="hero-cta__data"><i class="fa-regular fa-calendar-check"></i> 19 de agosto de 2026 · 14h às 17h</p>
+      <p>Vagas limitadas — garanta já a sua!</p>
+      <!-- TROCAR: número do WhatsApp em script.js (WHATSAPP_INSCRICAO) -->
+      <a href="#inscricao" class="btn btn--lg" data-whatsapp="inscricao">
+        <i class="fa-brands fa-whatsapp"></i> Faça sua inscrição
+      </a>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SOBRE O EVENTO — imagem + texto (faixa creme)
+  ========================================================== -->
+  <section class="section section--cream" id="sobre">
+    <div class="container">
+      <div class="split">
+        <div class="split__media reveal">
+          <img src="imagens/marcelo.jpg" alt="Marcelo Nunes" />
+        </div>
+
+        <div class="split__text reveal">
+          <span class="section__tag">Sobre o Evento</span>
+          <h2 class="section__title">Uma experiência criativa e transformadora</h2>
+          <p>
+            <!-- TROCAR: texto de apresentação -->
+            O Workshop Marcelo Nunes nasce do propósito de valorizar o artesanato e compartilhar
+            conhecimento de forma acolhedora. Artesão e instrutor referência no universo do crochê,
+            Marcelo transforma cada encontro em uma jornada de aprendizado, troca e inspiração.
+          </p>
+          <ul class="checklist">
+            <li><i class="fa-solid fa-check"></i> Técnicas exclusivas passo a passo</li>
+            <li><i class="fa-solid fa-check"></i> Material e suporte durante o evento</li>
+            <li><i class="fa-solid fa-check"></i> Ambiente acolhedor e inspirador</li>
+            <li><i class="fa-solid fa-check"></i> Certificado de participação - SENAI</li>
+          </ul>
+          <a href="#inscricao" class="btn">Garanta sua vaga</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FAIXA VERDE ESCURA com textura natural (estilo EuroRoma)
+  ========================================================== -->
+  <section class="band">
+    <div class="container band__inner">
+      <span class="section__tag section__tag--light">O Workshop na prática</span>
+      <h2 class="band__title">Mãos que criam, histórias que se tecem</h2>
+      <p class="band__text">
+        Mais do que aprender uma técnica, você vivencia a arte de criar com as próprias mãos.
+        Um espaço para inspirar, ensinar e conectar pessoas apaixonadas pelo crochê.
+      </p>
+      <div class="band__stats">
+        <div class="stat"><strong>+10</strong><span>técnicas ensinadas</span></div>
+        <div class="stat"><strong>100%</strong><span>prático e acolhedor</span></div>
+        <div class="stat"><strong>Vagas</strong><span>limitadas</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       GALERIA
+  ========================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">Galeria</span>
+        <h2 class="section__title">Turnê Marcelo Nunes</h2>
+        <p class="section__lead">Momentos da turnê em workshops já realizados.</p>
+      </div>
+      <div class="gallery">
+        <figure class="gallery__item reveal"><img src="imagens/galeria1.jpg" alt="Workshop da Turnê Marcelo Nunes" loading="lazy" /></figure>
+        <figure class="gallery__item reveal"><img src="imagens/galeria2.jpg" alt="Workshop da Turnê Marcelo Nunes" loading="lazy" /></figure>
+        <figure class="gallery__item reveal"><img src="imagens/galeria3.jpg" alt="Workshop da Turnê Marcelo Nunes" loading="lazy" /></figure>
+        <figure class="gallery__item reveal"><img src="imagens/galeria4.jpg" alt="Workshop da Turnê Marcelo Nunes" loading="lazy" /></figure>
+        <figure class="gallery__item reveal"><img src="imagens/galeria5.jpg" alt="Workshop da Turnê Marcelo Nunes" loading="lazy" /></figure>
+        <figure class="gallery__item reveal"><img src="imagens/galeria6.jpg" alt="Workshop da Turnê Marcelo Nunes" loading="lazy" /></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       LOCAL DO EVENTO
+  ========================================================== -->
+  <section class="section section--cream" id="local">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">Local do Evento</span>
+        <h2 class="section__title">Onde vai acontecer</h2>
+        <p class="section__lead">Confira abaixo todas as informações para chegar até o evento.</p>
+      </div>
+
+      <div class="local">
+        <div class="local__info reveal">
+          <ul class="info-list">
+            <li>
+              <span class="info-list__icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div><strong>Endereço completo</strong><p>SENAI Getúlio Vargas<br>Travessa Barão do Triunfo, nº 2806 – Marco<br>Belém – PA</p></div>
+            </li>
+            <li>
+              <span class="info-list__icon"><i class="fa-solid fa-map-signs"></i></span>
+              <div><strong>Pontos de referência</strong><p>Localizado no bairro Marco, em área de fácil acesso, próximo a vias principais e com comércio ao redor. Em caso de dúvida, use o mapa abaixo para chegar com mais precisão.</p></div>
+            </li>
+            <li>
+              <span class="info-list__icon"><i class="fa-solid fa-square-parking"></i></span>
+              <div><strong>Estacionamento</strong><p>Não há estacionamento próprio no local. Recomendamos estacionamentos privados ou vagas nas ruas próximas, sempre respeitando as regras da área.</p></div>
+            </li>
+            <li>
+              <span class="info-list__icon"><i class="fa-solid fa-clock"></i></span>
+              <div><strong>Data e horário</strong><p>19 de agosto de 2026 · Das 14h00 às 17h00.</p></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="local__map reveal">
+          <iframe
+            src="https://www.google.com/maps?q=-1.4326758,-48.4627743&z=16&hl=pt-BR&output=embed"
+            title="Mapa - SENAI Getúlio Vargas, Belém - PA"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       INSCRIÇÃO
+  ========================================================== -->
+  <section class="section" id="inscricao">
+    <div class="container container--narrow">
+      <div class="section__head reveal">
+        <span class="section__tag">Inscrição</span>
+        <h2 class="section__title">Garanta a sua vaga</h2>
+        <p class="section__lead">
+          Preencha seus dados abaixo. Ao finalizar, você será direcionado para o nosso WhatsApp
+          com as informações já preenchidas para concluir sua inscrição.
+        </p>
+        <p class="section__lead">
+          O valor da inscrição é de <strong>R$ 150,00</strong> e dá direito a: coffee break
+          durante o evento, participação em sorteio, pulseira de acesso ao evento e kit do evento.
+        </p>
+      </div>
+
+      <form class="form reveal" id="formInscricao" novalidate>
+        <div class="form__grid">
+          <div class="form__group form__group--full">
+            <label for="nome">Nome completo *</label>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" />
+          </div>
+          <div class="form__group form__group--full">
+            <label for="endereco">Endereço completo *</label>
+            <input type="text" id="endereco" name="endereco" required placeholder="Rua, número, bairro, cidade, estado, CEP" />
+          </div>
+          <div class="form__group">
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" name="cpf" inputmode="numeric" placeholder="000.000.000-00" maxlength="14" />
+          </div>
+          <div class="form__group">
+            <label for="rg">RG</label>
+            <input type="text" id="rg" name="rg" placeholder="00.000.000-0" />
+          </div>
+          <div class="form__group">
+            <label for="nascimento">Data de nascimento *</label>
+            <input type="date" id="nascimento" name="nascimento" required />
+          </div>
+          <div class="form__group">
+            <label for="telefone">Telefone (WhatsApp) *</label>
+            <input type="tel" id="telefone" name="telefone" required inputmode="numeric" placeholder="(00) 00000-0000" maxlength="15" />
+          </div>
+          <div class="form__group form__group--full">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com" />
+          </div>
+        </div>
+
+        <p class="form__note"><i class="fa-solid fa-lock"></i> Seus dados são usados apenas para concluir a inscrição.</p>
+
+        <button type="submit" class="btn btn--lg btn--block">
+          <i class="fa-brands fa-whatsapp"></i> Realizar minha inscrição
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CONTATO
+  ========================================================== -->
+  <section class="section section--cream" id="contato">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">Contato</span>
+        <h2 class="section__title">Fale com a gente</h2>
+        <p class="section__lead">Tem alguma dúvida? Entre em contato pelos canais abaixo.</p>
+      </div>
+
+      <div class="contact">
+        <a href="tel:+559131211929" class="contact-card reveal">
+          <i class="fa-solid fa-phone"></i><h4>Telefone</h4><p>3121-1929</p>
+        </a>
+        <a href="#" class="contact-card reveal" data-whatsapp="contato">
+          <i class="fa-brands fa-whatsapp"></i><h4>WhatsApp</h4><p>(91) 99335-5470</p>
+        </a>
+        <a href="mailto:contato@alinetecidos.com.br" class="contact-card reveal">
+          <i class="fa-solid fa-envelope"></i><h4>E-mail</h4><p>contato@alinetecidos.com.br</p>
+        </a>
+        <div class="contact-card reveal">
+          <i class="fa-solid fa-clock"></i><h4>Horário de Funcionamento</h4><p>Segunda a sexta: 8h30 às 17h30<br>Sábado: 8h30 às 15h<br><br><a href="https://www.google.com/maps/search/?api=1&query=Tv.+Frutuoso+Guimar%C3%A3es,+227+-+Campina,+Bel%C3%A9m+-+PA" target="_blank" rel="noopener" class="contact-card__map"><i class="fa-solid fa-location-dot"></i> Tv. Frutuoso Guimarães, 227 – Campina, Belém</a></p>
+        </div>
+      </div>
+
+      <div class="contact__social reveal">
+        <span>Siga nas redes:</span>
+        <a href="https://www.instagram.com/shoppingdoartesao/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       RODAPÉ — verde escuro com textura natural
+  ========================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__sponsors">
+        <p class="footer__sponsors-title">Realização e Apoio</p>
+        <div class="sponsors">
+          <img class="sponsor sponsor--euro" src="imagens/logo-euroroma.png" alt="EuroRoma" />
+          <img class="sponsor" src="imagens/logo-artesao-full.png" alt="Shopping do Artesão" />
+          <img class="sponsor sponsor--sm" src="imagens/logo-senai.png" alt="SENAI" />
+          <img class="sponsor sponsor--sm" src="imagens/logo-aline.png" alt="Aline Tecidos" />
+        </div>
+      </div>
+
+      <div class="footer__grid">
+        <div class="footer__col">
+          <div class="brand brand--footer">
+            <span class="brand__logo"><img src="imagens/logo-artesao.png" alt="Shopping do Artesão" /></span>
+            <span class="brand__text"><strong>Workshop</strong><small>Marcelo Nunes</small></span>
+          </div>
+          <p>Um evento dedicado à arte do artesanato, criatividade e inspiração.</p>
+        </div>
+        <div class="footer__col">
+          <h5>Links rápidos</h5>
+          <ul>
+            <li><a href="#sobre">Sobre o Evento</a></li>
+            <li><a href="#local">Local do Evento</a></li>
+            <li><a href="#inscricao">Inscrição</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Redes sociais</h5>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/shoppingdoartesao/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="WhatsApp" data-whatsapp="contato"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span id="ano"></span> Workshop Marcelo Nunes · Shopping do Artesão. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="#" class="whatsapp-float" data-whatsapp="contato" aria-label="Fale conosco no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
